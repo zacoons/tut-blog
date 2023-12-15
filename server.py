@@ -26,4 +26,4 @@ def server_static(filepath):
     return bottle.static_file(filepath, "./static")
 
 # only for testing: must be commented out when deploying
-bottle.run(app)
+# bottle.run(app)
