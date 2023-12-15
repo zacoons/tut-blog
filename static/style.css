@@ -1,0 +1,18 @@
+body {
+    width: 40%;
+    margin: auto;
+}
+
+nav {
+    padding: 1rem;
+}
+
+.posts-list a {
+    color: blue;
+    display: block;
+    padding: 1rem;
+    background-color: lightgray;
+}
+.posts-list a:hover {
+    background-color: rgb(187, 187, 187);
+}

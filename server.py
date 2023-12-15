@@ -18,3 +18,12 @@ def post(filename):
     md = open("posts/" + filename).read()
     content = markdown.markdown(md)
     return get_page("post.html", content=content)
+
+# static
+
+@app.route("/<filepath:path>")
+def server_static(filepath):
+    return bottle.static_file(filepath, "./static")
+
+# only for testing: must be commented out when deploying
+bottle.run(app)
